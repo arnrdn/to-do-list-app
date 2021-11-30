@@ -5,6 +5,7 @@
 
 body {
   background-color: #F6F6F6;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .to-do-container {
@@ -25,16 +26,50 @@ ul {
   flex-direction: column;
 }
 
-.main-title,
-form,
 ul li {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid #ececec;
+}
+
+.main-title,
+form {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   border-bottom: 2px solid #ececec;
 }
 
+input {
+  border: none;
+  font-style: italic;
+}
+
+.to-do-item {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin-left: 10px;
+}
+
+.more-dot {
+  width: 3px;
+  height: 3px;
+  margin-bottom: 3px;
+  border-radius: 50%;
+  background-color: #bdbdbd;
+}
+
 button {
   border: none;
   padding: 1rem;
+}
+
+button:hover {
+  text-decoration: underline;
 }

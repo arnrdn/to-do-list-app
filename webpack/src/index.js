@@ -45,11 +45,11 @@ class UI {
     toDoItem.innerHTML = `<div class="to-do-item">
     <input type="checkbox" name="to-do" id="to-do">
     <label for="to-do">${toDo.description}</label>
+    </div>
     <div class="more">
       <div class="more-dot"></div>
       <div class="more-dot"></div>
       <div class="more-dot"></div>
-    </div>
     </div>`;
 
     toDoContainer.appendChild(toDoItem);
