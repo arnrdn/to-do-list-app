@@ -8,12 +8,9 @@ class ToDoList {
     this.completed = completed;
     this.id = id;
   }
-}
 
-// UI Class: handle UI Tasks
+  // display todo
 
-class UI {
-  // display
   static display() {
     const toDoObj = [
       {
@@ -31,7 +28,7 @@ class UI {
     const toDos = toDoObj;
 
     toDos.forEach((toDo) => {
-      UI.addToDoToList(toDo);
+      ToDoList.addToDoToList(toDo);
     });
   }
 
@@ -54,23 +51,6 @@ class UI {
 
     toDoContainer.appendChild(toDoItem);
   }
-
-  // check todo as done
-
-  // remove todo ONE
-
-  // remove checked todos
 }
 
-// Event: Display ToDos
-
-document.addEventListener('DOMContentLoaded', UI.display);
-
-// Event: Add ToDos
-
-// Store Class: local storage
-
-// ADDIIONAL drag-and-drop items
-
-// INTERACTIVE LIST
-// ADD AND REMOVE ITEMS
+document.addEventListener('DOMContentLoaded', ToDoList.display);
