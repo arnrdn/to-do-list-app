@@ -71,5 +71,5 @@ button {
 }
 
 button:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
