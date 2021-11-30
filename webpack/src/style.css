@@ -1,3 +1,35 @@
-.hello {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+
+.to-do-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 2px;
+  width: 80%;
+  margin: 37vh auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title,
+form,
+ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
 }
