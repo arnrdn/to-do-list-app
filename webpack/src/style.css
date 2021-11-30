@@ -10,7 +10,6 @@ body {
 .to-do-container {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   border-radius: 2px;
   width: 80%;
   margin: 37vh auto;
@@ -31,5 +30,11 @@ form,
 ul li {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0;
+  padding: 1rem;
+  border-bottom: 2px solid #ececec;
+}
+
+button {
+  border: none;
+  padding: 1rem;
 }
