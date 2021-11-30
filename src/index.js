@@ -41,7 +41,7 @@ class ToDoList {
 
     toDoItem.innerHTML = `<div class="to-do-item">
     <input type="checkbox" name="to-do" id="to-do">
-    <label for="to-do">${toDo.description}</label>
+    <textarea class="done" name="to-do-text" id="to-do-text" rows="1" maxlength="30">${toDo.description}</textarea>
     </div>
     <div class="more">
       <div class="more-dot"></div>
@@ -53,4 +53,8 @@ class ToDoList {
   }
 }
 
+// display todos
 document.addEventListener('DOMContentLoaded', ToDoList.display);
+
+// make todo completed
+interactiveList.complete();

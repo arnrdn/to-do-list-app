@@ -53,8 +53,22 @@ input {
   align-items: center;
 }
 
-label {
+textarea {
   margin-left: 10px;
+  border: none;
+  resize: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea:focus {
+  outline: 0;
+}
+
+.done textarea {
+  text-decoration: line-through;
 }
 
 .more-dot {
@@ -71,5 +85,6 @@ button {
 }
 
 button:hover {
-  text-decoration: none;
+  cursor: pointer;
+  text-decoration: underline;
 }
