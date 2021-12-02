@@ -1,5 +1,5 @@
 import { toDoObj, addToDoToList } from './store.js';
-import { addTasks, removeTasks } from './local-storage.js';
+import { getTasks, addTasks, removeTasks } from './local-storage.js';
 
 const checkbox = addToDoToList();
 
@@ -19,4 +19,22 @@ function check() {
   }
 }
 
-export { check as default };
+function checked() {
+  window.addEventListener('load', () => {
+    const tasksStorage = getTasks();
+    toDoObj.splice(0, toDoObj.length, ...tasksStorage);
+    checkbox.forEach((task) => {
+      const parent = task.parentNode;
+      const superParent = parent.parentNode;
+      const index = Array.prototype.indexOf.call(superParent.children, parent);
+      const currentTask = tasksStorage[index].completed;
+      if (currentTask) {
+        task.setAttribute('checked', '');
+      }
+    });
+  });
+}
+
+
+
+export { check, checked };

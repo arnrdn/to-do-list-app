@@ -1,7 +1,6 @@
 // eslint-disable-next-line max-classes-per-file
 import './style.css';
-import check from './interactive-list.js';
-import { getTasks } from './local-storage.js';
+import { check, checked } from './interactive-list.js';
 
 // display todo
 
@@ -10,5 +9,5 @@ import { getTasks } from './local-storage.js';
 // display todos
 window.addEventListener('DOMContentLoaded', () => {
   check();
-  getTasks();
+  checked();
 });

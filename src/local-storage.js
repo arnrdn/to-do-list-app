@@ -8,7 +8,7 @@ function getTasks() {
   return tasks;
 }
 
-function addTasks(task, isChecked) {
+function addTasks(task) {
   const tasks = getTasks();
   tasks.push(task);
   localStorage.setItem('tasks', JSON.stringify(tasks));
