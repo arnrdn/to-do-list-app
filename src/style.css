@@ -60,15 +60,12 @@ textarea {
   font-size: 1rem;
   box-sizing: border-box;
   width: 100%;
+  text-decoration: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 textarea:focus {
   outline: 0;
-}
-
-.done textarea {
-  text-decoration: line-through;
 }
 
 .more-dot {
@@ -80,11 +77,13 @@ textarea:focus {
 }
 
 button {
+  color: #6b6a6b;
   border: none;
   padding: 1rem;
 }
 
 button:hover {
+  color: #000;
   cursor: pointer;
   text-decoration: underline;
 }
